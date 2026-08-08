@@ -26,3 +26,11 @@ Examples:
 - docs: update documentation
 - chore: update configuration
 - refactor: improve code structure
+
+
+## AI Development Guidelines
+
+- Review existing code before making changes.
+- Make only the changes requested.
+- Keep the project structure organized.
+- Explain significant changes when necessary.
