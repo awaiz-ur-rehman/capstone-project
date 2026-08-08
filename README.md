@@ -14,3 +14,10 @@ This is my capstone project focused on AI-assisted software development.
 ## Project Status
 
 Currently in development.
+
+## Goals
+
+- Build a practical software project.
+- Follow clean coding practices.
+- Use AI-assisted development workflows.
+- Maintain a clear and organized Git history.
