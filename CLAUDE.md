@@ -1,36 +1,11 @@
-# Project Instructions
+## Project Rules
 
-## Project
-Capstone Project
+1. All form inputs must have associated labels and clear validation messages.
 
-## Tech Stack
-- HTML
-- CSS
-- JavaScript
-- Node.js
+2. Form validation must handle empty fields and invalid email formats before allowing submission.
 
-## Coding Conventions
-- Use clean and readable code.
-- Use meaningful variable and function names.
-- Keep files organized.
-- Avoid unnecessary dependencies.
-- Write responsive and accessible UI.
-- Test changes before committing.
+3. Every new feature must be manually tested for its main user flow and important edge cases.
 
-## Git Conventions
-Use Conventional Commits.
+4. Validation logic should be kept separate from UI code when practical so it can be tested independently.
 
-Examples:
-- feat: add new feature
-- fix: fix a bug
-- docs: update documentation
-- chore: update configuration
-- refactor: improve code structure
-
-
-## AI Development Guidelines
-
-- Review existing code before making changes.
-- Make only the changes requested.
-- Keep the project structure organized.
-- Explain significant changes when necessary.
+5. Before completing a feature, check keyboard accessibility and confirm there are no browser console errors.
