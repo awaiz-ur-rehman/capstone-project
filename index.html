@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="card" aria-labelledby="settings-title">
+        <header class="card-header">
+          <p class="eyebrow">Account preferences</p>
+          <h1 id="settings-title">Update your settings</h1>
+          <p class="subtitle">Keep your profile information current and secure.</p>
+        </header>
+
+        <form id="settingsForm" novalidate>
+          <div class="form-grid">
+            <div class="field">
+              <label for="displayName">Display name</label>
+              <input id="displayName" name="displayName" type="text" autocomplete="name" required />
+              <p class="error" id="displayNameError" aria-live="polite"></p>
+            </div>
+
+            <div class="field">
+              <label for="email">Email address</label>
+              <input id="email" name="email" type="email" autocomplete="email" required />
+              <p class="error" id="emailError" aria-live="polite"></p>
+            </div>
+
+            <div class="field">
+              <label for="password">Password</label>
+              <input id="password" name="password" type="password" minlength="8" required />
+              <p class="error" id="passwordError" aria-live="polite"></p>
+            </div>
+
+            <div class="field">
+              <label for="confirmPassword">Confirm password</label>
+              <input id="confirmPassword" name="confirmPassword" type="password" required />
+              <p class="error" id="confirmPasswordError" aria-live="polite"></p>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="bio">Profile bio</label>
+            <textarea id="bio" name="bio" rows="4" maxlength="160" placeholder="Tell us a bit about yourself"></textarea>
+            <p class="hint">Optional. Maximum 160 characters.</p>
+          </div>
+
+          <div class="form-grid">
+            <div class="field">
+              <label for="theme">Theme</label>
+              <select id="theme" name="theme" required>
+                <option value="">Choose a theme</option>
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+                <option value="auto">Auto</option>
+              </select>
+              <p class="error" id="themeError" aria-live="polite"></p>
+            </div>
+
+            <div class="field">
+              <label for="timezone">Timezone</label>
+              <select id="timezone" name="timezone" required>
+                <option value="">Choose a timezone</option>
+                <option value="UTC">UTC</option>
+                <option value="EST">EST</option>
+                <option value="CST">CST</option>
+                <option value="MST">MST</option>
+                <option value="PST">PST</option>
+              </select>
+              <p class="error" id="timezoneError" aria-live="polite"></p>
+            </div>
+          </div>
+
+          <fieldset class="preferences">
+            <legend>Notifications</legend>
+            <label class="checkbox-row">
+              <input type="checkbox" name="emailUpdates" checked />
+              <span>Email updates</span>
+            </label>
+            <label class="checkbox-row">
+              <input type="checkbox" name="productTips" />
+              <span>Product tips</span>
+            </label>
+          </fieldset>
+
+          <button type="submit">Save settings</button>
+        </form>
+
+        <div id="formMessage" class="form-message" role="status" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "name": "capstone-project",
+  "version": "1.0.0",
+  "description": "Responsive settings form with validation",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
