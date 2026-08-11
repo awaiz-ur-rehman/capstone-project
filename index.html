@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="card" aria-labelledby="settings-title">
+        <h1 id="settings-title">Settings</h1>
+        <p class="intro">Update your contact details below.</p>
+
+        <form id="settings-form" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              autocomplete="name"
+              required
+              aria-describedby="name-error"
+              aria-invalid="false"
+            />
+            <p class="error-message" id="name-error" role="alert"></p>
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              autocomplete="email"
+              required
+              aria-describedby="email-error"
+              aria-invalid="false"
+            />
+            <p class="error-message" id="email-error" role="alert"></p>
+          </div>
+
+          <button type="submit">Save settings</button>
+          <p class="success-message" id="form-success" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
